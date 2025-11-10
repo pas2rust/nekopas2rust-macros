@@ -1,0 +1,39 @@
+[package]
+name = "nekopas2rust-macros"
+version = "0.0.3"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/pas2rust/nekopas2rust-macros"
+readme = "README.md"
+exclude = [
+    "tests/*",
+    "tests",
+    "main.rs"
+]
+categories = ["development-tools", "rust-patterns"]
+description = "..."
+keywords = ["builder", "derive", "macro", "setter", "struct"]
+authors = ["pas2rust <pas2000@proton.me>"]
+homepage = "https://github.com/pas2rust/nekopas2rust-macros"
+documentation = "https://docs.rs/nekopas2rust-macros"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn =  {version = "2", features = ["full"]}
+quote = "1"
+proc-macro2 =  "1"
+
+[dev-dependencies]
+regex = { version = "1"}
+tokio = { version = "1", features = ["macros", "rt-multi-thread"]}
+chrono = { version = "0"}
+colorful = { version = "0"}
+hex = { version = "0"}
+rand = { version = "0"}
+bincode = { version = "2"}
+aes-gcm-siv = { version = "0"}
+chacha20poly1305 = { version = "0"}
+argon2 = { version = "0"}
+serde = { version = "1", features = ["derive"]}
