@@ -1,4 +1,4 @@
-use super::import::*;
+pub use super::prelude::*;
 
 pub fn is_numeric(ty: &Type) -> bool {
     if let Type::Path(tp) = ty

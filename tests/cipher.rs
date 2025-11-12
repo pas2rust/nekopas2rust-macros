@@ -1,3 +1,4 @@
+#![cfg(feature = "cipher")]
 use bincode::{Decode, Encode};
 use nekopas2rust_macros::Cipher;
 

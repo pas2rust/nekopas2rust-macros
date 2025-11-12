@@ -1,4 +1,4 @@
-pub use super::import::*;
+pub use super::prelude::*;
 
 pub fn get_named_fields(input: &DeriveInput) -> Result<&FieldsNamed, &str> {
     match &input.data {

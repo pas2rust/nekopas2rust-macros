@@ -1,3 +1,4 @@
+#![cfg(feature = "print")]
 use nekopas2rust_macros::Print;
 
 #[derive(Debug, Print, Default, Clone)]

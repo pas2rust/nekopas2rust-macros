@@ -1,3 +1,4 @@
+#![cfg(all(feature = "math", feature = "builder"))]
 use nekopas2rust_macros::{Builder, Math};
 
 #[derive(Debug, Builder, Math, Clone)]

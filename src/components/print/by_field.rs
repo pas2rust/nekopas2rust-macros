@@ -23,7 +23,7 @@ pub fn print_by_field(input: &DeriveInput) -> proc_macro2::TokenStream {
                 field_name_string.chars().next().unwrap().to_uppercase(),
                 &field_name_string[1..]
             );
-            let method_name = new_ident("print", field_name);
+            let method_name = format_ident!("print_{field_name}");
             let printer_struct_name = format_ident!("NekoPrint{struct_name_string}{field_name_capitalized}");
 
             quote! {

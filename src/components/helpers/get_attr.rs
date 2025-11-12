@@ -1,4 +1,4 @@
-pub use super::import::*;
+pub use super::prelude::*;
 
 pub fn get_attr<T: Parse>(attributes: &[Attribute], name: &str) -> Result<T, String> {
     attributes

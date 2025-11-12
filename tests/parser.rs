@@ -1,3 +1,4 @@
+#![cfg(feature = "parser")]
 use bincode::{Decode, Encode};
 use nekopas2rust_macros::Parser;
 #[derive(Parser, Decode, Encode, PartialEq, Eq, Debug, Clone)]
@@ -54,7 +55,7 @@ fn parser_hash_set() {
         .unwrap();
     let age = user.get(&UserParserValue::UserAge(18)).unwrap();
     let friend = user
-        .get(&&UserParserValue::UserFriend(Friend {
+        .get(&UserParserValue::UserFriend(Friend {
             name: "John".to_string(),
         }))
         .unwrap();

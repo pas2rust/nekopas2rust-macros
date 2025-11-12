@@ -1,4 +1,4 @@
-pub use super::import::*;
+pub use super::prelude::*;
 
 pub fn generics_split_for_impl(
     input: &DeriveInput,

@@ -1,3 +1,4 @@
+#![cfg(feature = "cipher")]
 pub use super::aes_256_gcm_siv::*;
 pub use super::app::*;
 pub use super::argon2::*;
