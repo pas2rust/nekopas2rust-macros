@@ -1,4 +1,3 @@
-#![cfg(feature = "builder")]
 pub mod app;
 pub mod field_methods;
 pub mod get_type_name_ts;

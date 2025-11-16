@@ -15,8 +15,14 @@ pub mod parser;
     feature = "parser",
     feature = "cipher",
     feature = "math",
-    feature = "print"
+    feature = "print",
+    feature = "search",
+    feature = "sql"
 ))]
 pub mod prelude;
 #[cfg(feature = "print")]
 pub mod print;
+#[cfg(feature = "search")]
+pub mod search;
+#[cfg(feature = "sql")]
+pub mod sql;

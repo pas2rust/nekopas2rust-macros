@@ -1,6 +1,6 @@
 [package]
 name = "nekopas2rust-macros"
-version = "0.0.4"
+version = "0.0.5"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/pas2rust/nekopas2rust-macros"
@@ -37,6 +37,7 @@ aes-gcm-siv = { version = "0"}
 chacha20poly1305 = { version = "0"}
 argon2 = { version = "0"}
 serde = { version = "1", features = ["derive"]}
+tokio-postgres = "0"
 
 [features]
 default = []
@@ -48,4 +49,6 @@ chacha = []
 print = []
 math = []
 parser = []
-full = ["builder", "aes", "cipher", "argon", "chacha", "print", "math", "parser"]
+search = []
+sql = []
+full = ["builder", "aes", "cipher", "argon", "chacha", "print", "math", "parser", "search", "sql"]

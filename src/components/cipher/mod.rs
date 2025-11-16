@@ -1,4 +1,3 @@
-#![cfg(feature = "cipher")]
 pub mod aes_256_gcm_siv;
 pub mod app;
 pub mod argon2;

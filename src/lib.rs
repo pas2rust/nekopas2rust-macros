@@ -54,3 +54,21 @@ pub fn parser(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
     let generate_into = parser_app(&input);
     generate_into.into()
 }
+
+#[cfg(feature = "search")]
+#[proc_macro_derive(Search, attributes(opt))]
+pub fn search(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
+    let input = parse_macro_input!(input as DeriveInput);
+
+    let generate_into = search_app(&input);
+    generate_into.into()
+}
+
+#[cfg(feature = "sql")]
+#[proc_macro_derive(Sql, attributes(opt))]
+pub fn sql(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
+    let input = parse_macro_input!(input as DeriveInput);
+
+    let generate_into = sql_app(&input);
+    generate_into.into()
+}

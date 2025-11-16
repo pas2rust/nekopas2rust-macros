@@ -1,4 +1,3 @@
-#![cfg(feature = "builder")]
 pub use crate::components::get_opt::*;
 pub use crate::components::helpers::prelude::*;
 pub use proc_macro2::TokenStream;

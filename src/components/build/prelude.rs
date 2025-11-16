@@ -1,4 +1,3 @@
-#![cfg(feature = "builder")]
 pub use super::app::*;
 pub use super::field_methods::*;
 pub use super::get_type_name_ts::*;
